@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/member"
+            android:title="Member" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/event"
+            android:title="Event"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location"
+            android:title="Location"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_fjb"
+            android:icon="@drawable/ic_fjb"
+            android:title="FJB"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/payment"
+            android:title="Payment"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="News" />
+    </group>
+
+    <item android:title="Manage Account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,494 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bodyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="0dp"
+    android:weightSum="1"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="com.ias.activity.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/imageTitleContentDescription"
+            android:src="@drawable/title_img" />
+
+        <TextView
+            android:id="@+id/screenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="16sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/nameTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screenTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/titleSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTitleLabel"
+            android:background="@drawable/rounded_corner"
+            android:entries="@array/title_name"
+            android:popupBackground="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/firstNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleSpinner"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/first_name_field"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/lastNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstNameField"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:hint="@string/last_name_field"
+            android:inputType="textPersonName"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/fullAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastNameField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/firstLineAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fullAddressLabel"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/first_line_address_field"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/secondLineAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/firstLineAddressField"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/second_line_address_field"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/cityField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLineAddressField"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/city_field"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/stateProvinceRegionField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cityField"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/state_province_region_field"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <EditText
+            android:id="@+id/postalZipCodeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateProvinceRegionField"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/postal_zipcode_field"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/mobilePhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/postalZipCodeField"
+            android:labelFor="@+id/mobilePhoneField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mobilePhoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobilePhoneLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="phone"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mobilePhoneField"
+            android:labelFor="@+id/emailField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/birthPlaceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/emailField"
+            android:labelFor="@+id/birthPlaceField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/birthPlaceField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/birthPlaceLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="text"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/birthDayLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/birthPlaceField"
+            android:labelFor="@+id/birthDayField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/birthDayField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthDayLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="date"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/vehicleLicensePlateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/birthDayField"
+            android:labelFor="@+id/vehicleLicensePlateField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vehicleLicensePlateField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleLicensePlateLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="text"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/vehicleYearAssemblyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleLicensePlateField"
+            android:labelFor="@+id/vehicleYearAssemblyField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vehicleYearAssemblyField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleYearAssemblyLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="number"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/vehicleTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleYearAssemblyField"
+            android:labelFor="@+id/vehicleTypeSpinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/vehicleTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicleTypeLabel"
+            android:entries="@array/car_type"
+            android:background="@drawable/rounded_corner"
+            android:popupBackground="@color/textColorWhite"/>
+
+        <TextView
+            android:id="@+id/vehicleGearTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleTypeSpinner"
+            android:labelFor="@+id/vehicleGearRadioGroup"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/vehicleGearRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleGearTypeLabel"
+            android:background="@drawable/rounded_corner">
+
+            <RadioButton
+                android:id="@+id/manualRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/manualRadioButtonLabel"
+                android:textColor="@color/textColorWhite"/>
+
+            <RadioButton
+                android:id="@+id/automaticRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/automaticRadioButtonLabel"
+                android:textColor="@color/textColorWhite"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/vehicleColorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleGearRadioGroup"
+            android:labelFor="@+id/vehicleColorField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vehicleColorField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vehicleColorLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="text"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/shirtSizeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleColorField"
+            android:labelFor="@+id/shirtSizeSpinner"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/shirtSizeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shirtSizeLabel"
+            android:entries="@array/shirt_size"
+            android:background="@drawable/rounded_corner"
+            android:popupBackground="@color/textColorWhite"/>
+
+        <TextView
+            android:id="@+id/driverLicenseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shirtSizeSpinner"
+            android:labelFor="@+id/driverLicenseField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/driverLicenseField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/driverLicenseLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="text"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/validTimeDriverLicenseLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/driverLicenseField"
+            android:labelFor="@+id/validTimeLicenseField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/validTimeLicenseField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/validTimeDriverLicenseLabel"
+            android:background="@drawable/rounded_corner"
+            android:inputType="date"
+            android:textColor="@color/textColorWhite"
+            android:textColorHint="@color/textColorWhite" />
+
+        <TextView
+            android:id="@+id/driverLicensePhotoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/validTimeLicenseField"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/driverLicensePhotoImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/driverLicensePhotoLabel"
+            android:contentDescription="@string/driverLicensePhotoContentDescription"
+            android:src="@mipmap/img_icon"
+            android:background="@drawable/rounded_corner"/>
+
+        <TextView
+            android:id="@+id/vehicleLicensePhotoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/driverLicensePhotoImage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/vehicleLicensePhotoImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/vehicleLicensePhotoLabel"
+            android:contentDescription="@string/vehicleLicensePhotoContentDescription"
+            android:src="@mipmap/img_icon"
+            android:background="@drawable/rounded_corner"/>
+
+        <TextView
+            android:id="@+id/memberPhotoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vehicleLicensePhotoImage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/memberPhotoImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/memberPhotoLabel"
+            android:background="@drawable/rounded_corner"
+            android:contentDescription="@string/memberPhotoContentDescription"
+            android:src="@mipmap/img_icon" />
+
+        <TextView
+            android:id="@+id/evidenceTransferPhotoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/memberPhotoImage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/textColorWhite"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/evidenceTransferPhotoImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/evidenceTransferPhotoLabel"
+            android:contentDescription="@string/evidenceTransferPhotoContentDescription"
+            android:src="@mipmap/img_icon"
+            android:background="@drawable/rounded_corner"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/evidenceTransferPhotoImage"
+            android:text="@string/submitButton" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TRCI</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">User ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Masuk</string>
+    <string name="action_sign_up">Daftar</string>
+    <string name="activation">Set Password Baru/Lupa Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="payment_type">Payment Type</string>
+    <string-array name="method_type">
+        <item>Duitku Wallet</item>
+        <item>Credit Card VISA/MASTER</item>
+        <item>BCA Klik Pay</item>
+        <item>Mandiri Click Pay</item>
+        <item>Permata Bank Virtual Account</item>
+        <item>Cimb Niaga Virtual Account</item>
+        <item>ATM Bersama</item>
+        <item>BNI Virtual Account</item>
+        <item>MayBank Virtual Account</item>
+        <item>Cimb Click</item>
+    </string-array>
+</resources>

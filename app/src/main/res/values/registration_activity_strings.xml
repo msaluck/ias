@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imageTitleContentDescription">image title</string>
+    <string name="title"><![CDATA[<b><font color=#FF0000>FORMULIR PENDAFTARAN TOYOTA RUSH CLUB INDONESIA</font></b>]]></string>
+    <string name="name_label">Nama <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="first_name_field">First</string>
+    <string name="last_name_field">Last</string>
+    <string-array name="title_name">
+        <item>Mas</item>
+        <item>Mba</item>
+        <item>Om</item>
+        <item>Tante</item>
+        <item>Bapak</item>
+        <item>Ibu</item>
+        <item>Tn</item>
+        <item>Ny</item>
+        <item>Nona</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Ms.</item>
+    </string-array>
+    <string name="full_address_label">Alamat Lengkap <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="first_line_address_field">Address Line 1</string>
+    <string name="second_line_address_field">Address Line 2</string>
+    <string name="city_field">City</string>
+    <string name="state_province_region_field">State / Province / Region</string>
+    <string name="postal_zipcode_field">Postal / Zip Code</string>
+    <string name="mobile_phone_label">Nomer Ponsel <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="email_label">Email</string>
+    <string name="birthplace_label">Tempat Lahir <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="birthday_label">Tanggal Lahir <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="vehicleLicensePlateLabel">Plat Nomer Mobil <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="vehicleYearAssemblyLabel">Tahun Perakitan <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="vehicleTypeLabel">Tipe Rush <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string-array name="car_type">
+        <item>E</item>
+        <item>G</item>
+        <item>S</item>
+        <item>TRD Sportivo</item>
+        <item>TRD Sportivo Ultimo</item>
+    </string-array>
+    <string name="vehicleGearTypeLabel">Jenis Transmisi <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="manualRadioButtonLabel">Manual</string>
+    <string name="automaticRadioButtonLabel">Otomatis</string>
+    <string name="vehicleColorLabel">Warna Mobil <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="shirtSizeLabel">Ukuran Kemeja <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string-array name="shirt_size">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>XXXL</item>
+        <item>XXXXL</item>
+        <item>XXXXXL</item>
+    </string-array>
+    <string name="driverLicenseLabel">Nomer SIM <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="validTimeDriverLicenseLabel">Masa Berlaku SIM <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="driverLicensePhotoLabel">Foto SIM <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="driverLicensePhotoContentDescription">image of driver license</string>
+    <string name="vehicleLicensePhotoLabel">Foto STNK <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="vehicleLicensePhotoContentDescription">image of vehicle license</string>
+    <string name="memberPhotoLabel">Foto Diri Untuk ID Card TRCI <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="memberPhotoContentDescription">image of member photo</string>
+    <string name="evidenceTransferPhotoLabel">Foto Bukti Transfer <![CDATA[<b><font color=#FF0000>*</font></b>]]></string>
+    <string name="evidenceTransferPhotoContentDescription">image of evidence transfer photo</string>
+    <string name="submitButton">Submit</string>
+</resources>

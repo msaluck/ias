@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/line1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:text="ID"
+        android:textAlignment="textStart"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textViewChapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewID"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:text="Chapter"
+        android:textAlignment="textStart"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textViewNoStnk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChapter"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:text="nomor STNK"
+        android:textAlignment="textStart"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/TopRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:text="Masukkan Code Untuk Set Password."/>
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_below="@id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#1E90FF"
+            android:text="Jika Anda belum mendapatkan code, Silakan menghubungi Call Center Kami di 081234212312"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/CenterRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    <me.philio.pinentry.PinEntryView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:foregroundGravity="center"
+        android:layout_gravity="center_horizontal"
+        app:digitBackground="@drawable/square"
+        app:numDigits="5"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/BottomRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    <Button
+        android:id="@+id/activationButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Iya"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom"/>
+    </RelativeLayout>
+
+</RelativeLayout>
