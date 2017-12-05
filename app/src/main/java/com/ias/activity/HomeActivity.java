@@ -13,7 +13,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
@@ -22,10 +21,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ias.fragment.DogeFragment;
 import com.ias.fragment.EventFragment;
 import com.ias.fragment.HomeFragment;
 import com.ias.fragment.MemberFragment;
@@ -204,7 +201,13 @@ public class HomeActivity extends AppCompatActivity
                     .addToBackStack(null)
                     .commit();
 
-        } else if (id == R.id.nav_payment) {
+        }
+        else if (id == R.id.nav_location) {
+            Intent i = new Intent(HomeActivity.this, MapsActivity.class);
+            startActivity(i);
+
+        }
+        else if (id == R.id.nav_payment) {
 
 
             PaymentFragment paymentFragment= new PaymentFragment();

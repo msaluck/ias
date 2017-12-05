@@ -7,13 +7,13 @@ package com.ias.handler;
 public class Constant {
 //    public static final String URL_STRING = "http://119.235.18.69:8080/server/servlet";
 
-//    public static final String URL_STRING = "http://192.168.103.203:8080/Server/servlet";
+    public static final String URL_STRING = "http://192.168.103.203:8080/Server/servlet";
 
-    public static final String URL_STRING = "";
+//    public static final String URL_STRING = "http://180.250.111.4:8080/Server/servlet";
 
-    public static final String USERNAMEAPP = "";
+    public static final String USERNAMEAPP = "trci";
 
-    public static final String PWDAPP = "";
+    public static final String PWDAPP = "cihuy123!";
 
     public static final String USER = "user";
 
